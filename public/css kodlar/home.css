@@ -36,6 +36,49 @@ font-weight: 500;
 line-height: 22px;
 text-transform: capitalize;
 }
+/* pagionation
+ .continer .product_pagionation_box {
+  margin-top: 30px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.continer .pagionation_main {
+  width: auto;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.continer .pagionation_main .pagionation_dot {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: row;
+
+}
+.continer .pagionation_main .pagionation_dot .dot {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+
+}
+.continer .pagionation_main .pagionation_dot .dot.active {
+  border: 2px solid #112137;
+}
+.continer .pagionation_main .pagionation_dot .dot div {
+  width: 4px;
+  height: 4px;
+  background-color: rgba(17, 33, 55, 1);
+  border-radius: 50%;
+} */
 
   .header_frame {
     position: relative;
@@ -284,7 +327,7 @@ line-height: 28px;
 text-align: center;
 }
 /* selling product */
-.selling_product_frame{
+.selling_product_frame {
   position: relative; 
   margin-top: 60px;
   width: 100%;
@@ -297,7 +340,7 @@ text-align: center;
   flex-direction: column;
 
 }
-.continer .product_wrapper {
+.selling_product_frame .continer .product_wrapper {
   position: relative;
   margin-top: 30px;
   width: 100%;
@@ -307,36 +350,37 @@ text-align: center;
   justify-content: space-between;
 
 }
-.product_wrapper .next_prev_box {
+.selling_product_frame .product_wrapper .next_prev_box {
   width: 25px;
 
 }
 
 
-.next_prev_box img {
+.selling_product_frame .next_prev_box img {
   position: absolute;
   top: 50%;
+  cursor: pointer;
 
 }
-.product_wrapper .product_boxes {
+.selling_product_frame .product_wrapper .product_boxes {
   width: 1224px;
   height: 452px;
   display: flex;
   flex-direction: row;
   position: relative;
 }
-.product_boxes .product_box {
+.selling_product_frame .product_boxes .product_box {
   width:306px;
   height: 100%;
   display: flex;
   flex-direction: column;
   /* cursor: pointer; */
 }
-.product_box .product_img_box {
+.selling_product_frame .product_box .product_img_box {
   width: 100%;  
   height: 280px;
 }
-.product_img_box .hover_box {
+.selling_product_frame .product_img_box .hover_box {
 
   display: none;
   width: 100%;
@@ -345,7 +389,7 @@ text-align: center;
   justify-content: flex-end;
   align-items: center;
 }
-.hover_box button {
+.selling_product_frame .hover_box button {
 width: 260px;
 height: 50px;
 display: flex;
@@ -366,17 +410,17 @@ margin-bottom: 10px;
 }
 
 
-.product_img_box:hover .hover_box {
+.selling_product_frame .product_img_box:hover .hover_box {
   display: flex;
 
 } 
-.product_box .product_content_box {
+.selling_product_frame .product_box .product_content_box {
   box-sizing: border-box;
   padding: 5px 22px;
   width: 100%;
   height: auto;
 }
-.product_content_box .product_title {
+.selling_product_frame .product_content_box .product_title {
 color: rgba(98, 105, 116, 1);
 font-family: "Jost";
 font-style: Regular;
@@ -387,7 +431,7 @@ letter-spacing: 0%;
 text-align: left;
 text-transform: uppercase;
 }
-.product_content_box .product_desc {
+.selling_product_frame .product_content_box .product_desc {
   margin-top: 7px;
   color: rgba(4, 30, 66, 1);
 
@@ -401,16 +445,16 @@ text-align: left;
 height: 56px;
 overflow: hidden;
 }
-.product_content_box .review_box {
+.selling_product_frame .product_content_box .review_box {
   margin-top: 7px;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.review_box {
+.selling_product_frame .review_box {
   margin-right: 5px;
 }
-.review_box span {
+.selling_product_frame .review_box span {
   margin-left: 10px;
   color: rgba(98, 105, 116, 1);
 font-family: "Jost";
@@ -420,13 +464,13 @@ font-weight: 400;
 line-height: 22px;
 letter-spacing: 0%;
 } 
-.product_content_box .price_box {
+.selling_product_frame .product_content_box .price_box {
   margin-top: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.price_box strong {
+.selling_product_frame .price_box strong {
 color: rgba(4, 30, 66, 1);
 
 font-family: "Jost";
@@ -437,10 +481,9 @@ line-height: 26px;
 letter-spacing: 0%;
 }
 
-.price_box span {
+.selling_product_frame .price_box span {
   margin-left: 10px;
 color: rgba(98, 105, 116, 1);
-
 font-family: "Jost";
 font-style: Regular;
 font-size: 14px;
@@ -449,5 +492,66 @@ line-height: 22px;
 letter-spacing: 0%;
 text-align: left;
 text-decoration-line: line-through;
+}
+.continer .product_pagionation_box {
+  margin-top: 30px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
+}
+.continer .pagionation_main {
+  width: auto;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.pagionation_main img {
+  cursor: pointer;
+}
+
+.continer .pagionation_main .pagionation_dot {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: row;
+
+}
+.continer .pagionation_main .pagionation_dot .dot {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+
+}
+.continer .pagionation_main .pagionation_dot .dot.active {
+  border: 2px solid #112137;
+}
+.continer .pagionation_main .pagionation_dot .dot div {
+  width: 4px;
+  height: 4px;
+  background-color: rgba(17, 33, 55, 1);
+  border-radius: 50%;
+}
+ .adv_frame {
+  margin-top: 90px;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+background-color: #e5edff;
+  color: rgba(0, 83, 246, 1);
+font-family: "Jost";
+font-style: Medium;
+font-size: 18px;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0%;
 }
