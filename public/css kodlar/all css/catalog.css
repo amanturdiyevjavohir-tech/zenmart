@@ -100,8 +100,11 @@ button, input, select { font: inherit; }
 .footer_frame .apps .footer_contact_title { margin-bottom: 7px; }
 .footer_frame .apps a { display: flex; align-items: center; gap: 7px; margin: 3px 0; color: #536176; font-size: 11px; }
 .footer_frame .apps img { width: 16px; height: 16px; object-fit: contain; }
-.footer_frame .card_box { display: flex; flex-wrap: wrap; gap: 7px; }
-.footer_frame .card_box img { width: 30px; height: 20px; object-fit: contain; }
+.footer_frame .footer-payment { justify-content: flex-end; }
+.footer_frame .footer-payment .footer_media_main { align-items: flex-end; }
+.footer-frame .footer-payment .footer_contact_title { text-align: right; }
+.footer_frame .card_box { display: flex; flex-wrap: nowrap; justify-content: flex-end; align-items: center; gap: 7px; }
+.footer_frame .card_box img { width: 30px; height: 20px; flex: 0 0 30px; object-fit: contain; }
 .footer_frame .footer_bottom { margin-top: 30px; border-top: 1px solid #e3e6e9; }
 .footer_frame .footer_bottom .footer_main { display: flex; align-items: center; justify-content: space-between; gap: 15px; width: 100%; margin-top: 16px; }
 .footer_frame .footer_bottom_left { display: flex; flex-wrap: wrap; gap: 8px 20px; }
