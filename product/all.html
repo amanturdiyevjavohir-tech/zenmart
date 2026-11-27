@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop laptops and computer accessories at Zenmart.">
+  <title>Laptops | Zenmart</title>
+  <link rel="stylesheet" href="../public/css kodlar/command.css">
+  <link rel="stylesheet" href="../public/css kodlar/all css/catalog.css">
+  <link rel="stylesheet" href="../public/css kodlar/all css/catalog-responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <header class="navbar_frame">
+    <div class="continer">
+      <div class="navbar_top">
+        <a class="brand-logo" href="../index.html"><img src="../public/images/icons/logo.png" alt="Zenmart"></a>
+        <form class="nav_search_frame" action="#laptop-list" role="search">
+          <div class="search_box">
+            <label class="category_list"><span class="sr-only">Search category</span><select aria-label="Search category"><option>All Categories</option><option>Computers</option><option>Laptops</option></select></label>
+            <input type="search" placeholder="Search products" aria-label="Search products">
+          </div>
+          <button class="search_icon_box" type="submit" aria-label="Search"><img src="../public/images/icons/search.svg" alt=""></button>
+        </form>
+        <div class="nav_top_menu">
+          <a class="top_menu_box" href="#wishlist"><span class="box_icon_box"><img src="../public/images/icons/heart.svg" alt=""></span><span class="box_info_box"><span>Wishlist</span><strong>My Items</strong></span></a>
+          <a class="top_menu_box" href="#account"><span class="box_icon_box"><img src="../public/images/icons/profile.svg" alt=""></span><span class="box_info_box"><span>Sign In</span><strong>Account</strong></span></a>
+          <a class="top_menu_box" href="#cart"><span class="box_icon_box"><img src="../public/images/icons/shopping-cart.svg" alt=""><span class="busket_count">2</span></span><span class="box_info_box"><span>$200.99</span><strong>Total</strong></span></a>
+        </div>
+      </div>
+      <div class="navbar_bott">
+        <div class="navbar_bott_menu_box">
+          <div class="browse_box"><img src="../public/images/icons/browse.svg" alt=""><span>Browse Categories</span></div>
+          <nav class="navbar_route_box" aria-label="Main navigation"><a href="../index.html">Home</a><a class="title" href="all.html">Shop</a><a href="#orders">Orders</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+          <nav class="sorting_menu" aria-label="Featured links"><a href="#top-selling">Deal of the Day</a><a href="#top-selling">Hot Deals</a><a href="#laptop-list">Best Sellers</a></nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="catalog-page">
+    <div class="catalog-shell">
+      <nav class="category-nav" aria-label="Electronics categories">
+        <a href="#categories">All Electronics</a><a href="#categories">Smart TV</a><a class="active" href="#laptop-list">Laptops</a><a href="#categories">Smart Watch</a><a href="#categories">Headphones</a><a href="#categories">Accessories</a>
+      </nav>
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a><span>/</span><a href="#categories">Electronics</a><span>/</span><a href="#laptop-list">Computers</a><span>/</span><span aria-current="page">Laptops</span></nav>
+
+      <section class="catalog-hero" aria-labelledby="hero-title">
+        <div class="hero-copy"><span class="hero-kicker">Special offer</span><h1 id="hero-title">Save up to $130 on select laptops.</h1><p>Find the right laptop for work, school, and everything in between.</p><a class="button button-yellow" href="#laptop-list">Shop laptops <span aria-hidden="true">→</span></a></div>
+        <img class="hero-art" src="../public/images/other/header1.png" alt="Featured Zenmart technology offer" fetchpriority="high">
+      </section>
+
+      <section class="category-section" id="categories" aria-labelledby="category-title">
+        <div class="section-heading"><h2 id="category-title">Shop by Category</h2><a href="../index.html">View All Categories <span aria-hidden="true">→</span></a></div>
+        <div class="category-grid">
+          <a class="category-card" href="#laptop-list"><img src="../public/images/category/tv.png" alt=""><strong>TVs, Home Theatre,<br>and Accessories</strong></a>
+          <a class="category-card" href="#laptop-list"><img src="../public/images/category/computer.png" alt=""><strong>Computers, Tablets,<br>and Accessories</strong></a>
+          <a class="category-card" href="#laptop-list"><img src="../public/images/category/smart.png" alt=""><strong>Smart Home</strong></a>
+          <a class="category-card" href="#laptop-list"><img src="../public/images/category/headphone.png" alt=""><strong>Headphones and<br>Portable Speakers</strong></a>
+          <a class="category-card" href="#laptop-list"><img src="../public/images/category/phone.png" alt=""><strong>Cell Phones and<br>Accessories</strong></a>
+          <a class="category-card" href="#laptop-list"><img src="../public/images/category/game.png" alt=""><strong>Video Games, Consoles,<br>and Accessories</strong></a>
+        </div>
+      </section>
+
+      <section class="brand-section" aria-labelledby="brand-title"><div class="section-heading"><h2 id="brand-title">Shop by brand</h2><a href="#laptop-list">View All <span aria-hidden="true">→</span></a></div>
+        <div class="brand-list" aria-label="Laptop brands"><a href="#laptop-list">acer</a><a href="#laptop-list">ASUS</a><a href="#laptop-list"> apple</a><a href="#laptop-list">hp</a><a href="#laptop-list">SAMSUNG</a><a href="#laptop-list">Lenovo</a></div>
+      </section>
+
+      <section class="selling-section" id="top-selling" aria-labelledby="selling-title">
+        <div class="section-heading"><h2 id="selling-title">Top Selling Products</h2><a href="#laptop-list">View All <span aria-hidden="true">→</span></a></div>
+        <div class="selling-grid">
+          <a class="selling-card" href="#laptop-list"><img src="../public/images/products/acer_silver.png" alt="Acer laptop"><span class="product-brand">ACER</span><strong>Acer Aspire laptop</strong><span class="price">$549.00</span></a>
+          <a class="selling-card" href="#laptop-list"><img src="../public/images/products/asus_laptop.png" alt="ASUS gaming laptop"><span class="product-brand">ASUS</span><strong>ASUS TUF Gaming laptop</strong><span class="price">$899.00</span></a>
+          <a class="selling-card" href="#laptop-list"><img src="../public/images/products/macbook_16.png" alt="Apple MacBook"><span class="product-brand">APPLE</span><strong>Apple MacBook Air</strong><span class="price">$1,099.00</span></a>
+          <a class="selling-card" href="#laptop-list"><img src="../public/images/products/nitro_laptop.png" alt="Acer Nitro laptop"><span class="product-brand">ACER</span><strong>Acer Nitro gaming laptop</strong><span class="price">$799.00</span></a>
+          <a class="selling-card" href="#laptop-list"><img src="../public/images/products/sony_notebook.png" alt="Microsoft Surface laptop"><span class="product-brand">MICROSOFT</span><strong>Surface Laptop Go</strong><span class="price">$699.00</span></a>
+          <a class="selling-card" href="#laptop-list"><img src="../public/images/products/sony_laptop.png" alt="Samsung Galaxy Book"><span class="product-brand">SAMSUNG</span><strong>Galaxy Book laptop</strong><span class="price">$849.00</span></a>
+        </div>
+      </section>
+
+      <section class="product-section" id="laptop-list" aria-labelledby="products-title">
+        <div class="product-heading"><div><span class="eyebrow">Find your next computer</span><h2 id="products-title">Laptops and Accessories</h2><p>Shop laptops for work, school, gaming, and everyday use.</p></div><div class="filter-list"><label for="sort-products">Sort by</label><select id="sort-products"><option>Recommended</option><option>Price: low to high</option><option>Price: high to low</option></select><label class="sr-only" for="show-count">Products per page</label><select id="show-count"><option>20 per page</option><option>40 per page</option></select></div></div>
+        <div class="product-grid">
+          <article class="product-card"><a class="product-image" href="#product-1"><img src="../public/images/products/acer_silver.png" alt="Lenovo IdeaPad laptop"><span class="processor-badge">intel<br><b>CORE i5</b></span><span class="favorite" aria-label="Add to wishlist">♡</span></a><div class="product-info"><small>LENOVO</small><h3><a href="#product-1">IdeaPad 15.6-inch laptop, Intel Core i5</a></h3><div class="rating"><span>★★★★★</span> <small>(248)</small></div><strong>$629.99</strong><del>$749.99</del></div></article>
+          <article class="product-card"><a class="product-image" href="#product-2"><img src="../public/images/products/asus_laptop.png" alt="ASUS TUF gaming laptop"><span class="processor-badge">intel<br><b>CORE i7</b></span><span class="favorite" aria-label="Add to wishlist">♡</span></a><div class="product-info"><small>ASUS</small><h3><a href="#product-2">TUF Gaming F15 15.6-inch laptop</a></h3><div class="rating"><span>★★★★★</span> <small>(182)</small></div><strong>$1,099.99</strong></div></article>
+          <article class="product-card"><a class="product-image" href="#product-3"><img src="../public/images/products/macbook_16.png" alt="Apple MacBook Air"><span class="favorite" aria-label="Add to wishlist">♡</span></a><div class="product-info"><small>APPLE</small><h3><a href="#product-3">MacBook Air 13-inch with Apple chip</a></h3><div class="rating"><span>★★★★★</span> <small>(396)</small></div><strong>$1,099.00</strong></div></article>
+          <article class="product-card"><a class="product-image" href="#product-4"><img src="../public/images/products/acer_laptop.png" alt="HP laptop"><span class="processor-badge">intel<br><b>CORE i3</b></span><span class="favorite" aria-label="Add to wishlist">♡</span></a><div class="product-info"><small>HP</small><h3><a href="#product-4">15.6-inch laptop with Intel processor</a></h3><div class="rating"><span>★★★★☆</span> <small>(104)</small></div><strong>$449.99</strong><del>$529.99</del></div></article>
+          <article class="product-card"><a class="product-image" href="#product-5"><img src="../public/images/products/rolex_laptop.png" alt="ASUS VivoBook laptop"><span class="favorite" aria-label="Add to wishlist">♡</span></a><div class="product-info"><small>ASUS</small><h3><a href="#product-5">VivoBook 14-inch everyday laptop</a></h3><div class="rating"><span>★★★★★</span> <small>(87)</small></div><strong>$579.99</strong></div></article>
+          <article class="product-card"><a class="product-image" href="#product-6"><img src="../public/images/products/sony_notebook.png" alt="Microsoft Surface Laptop Go"><span class="favorite" aria-label="Add to wishlist">♡</span></a><div class="product-info"><small>MICROSOFT</small><h3><a href="#product-6">Surface Laptop Go 12.4-inch touchscreen</a></h3><div class="rating"><span>★★★★★</span> <small>(131)</small></div><strong>$699.99</strong></div></article>
+          <article class="product-card"><a class="product-image" href="#product-7"><img src="../public/images/products/nitro_laptop.png" alt="Acer Nitro gaming laptop"><span class="processor-badge">intel<br><b>CORE i7</b></span><span class="favorite" aria-label="Add to wishlist">♡</span></a><div class="product-info"><small>ACER</small><h3><a href="#product-7">Nitro 5 gaming laptop, 15.6-inch display</a></h3><div class="rating"><span>★★★★★</span> <small>(226)</small></div><strong>$899.99</strong></div></article>
+          <article class="product-card"><a class="product-image" href="#product-8"><img src="../public/images/products/sony_laptop.png" alt="Samsung Galaxy Book laptop"><span class="favorite" aria-label="Add to wishlist">♡</span></a><div class="product-info"><small>SAMSUNG</small><h3><a href="#product-8">Galaxy Book 15.6-inch lightweight laptop</a></h3><div class="rating"><span>★★★★☆</span> <small>(73)</small></div><strong>$849.99</strong></div></article>
+          <article class="product-card"><a class="product-image" href="#product-9"><img src="../public/images/products/acer_silver.png" alt="Acer Aspire 5 laptop"><span class="favorite" aria-label="Add to wishlist">♡</span></a><div class="product-info"><small>ACER</small><h3><a href="#product-9">Aspire 5 15.6-inch laptop, 512GB SSD</a></h3><div class="rating"><span>★★★★★</span> <small>(164)</small></div><strong>$599.99</strong></div></article>
+          <article class="product-card"><a class="product-image" href="#product-10"><img src="../public/images/products/macbook_16.png" alt="Apple MacBook Pro"><span class="favorite" aria-label="Add to wishlist">♡</span></a><div class="product-info"><small>APPLE</small><h3><a href="#product-10">MacBook Pro 14-inch notebook</a></h3><div class="rating"><span>★★★★★</span> <small>(312)</small></div><strong>$1,799.00</strong></div></article>
+          <article class="product-card"><a class="product-image" href="#product-11"><img src="../public/images/products/sony_notebook.png" alt="Surface Laptop touchscreen"><span class="favorite" aria-label="Add to wishlist">♡</span></a><div class="product-info"><small>MICROSOFT</small><h3><a href="#product-11">Surface 13.5-inch touchscreen laptop</a></h3><div class="rating"><span>★★★★☆</span> <small>(95)</small></div><strong>$1,199.99</strong></div></article>
+          <article class="product-card"><a class="product-image" href="#product-12"><img src="../public/images/products/asus_laptop.png" alt="ASUS ROG gaming laptop"><span class="processor-badge">intel<br><b>CORE i9</b></span><span class="favorite" aria-label="Add to wishlist">♡</span></a><div class="product-info"><small>ASUS</small><h3><a href="#product-12">ROG Strix gaming laptop, 16-inch</a></h3><div class="rating"><span>★★★★★</span> <small>(144)</small></div><strong>$1,499.99</strong></div></article>
+          <article class="product-card"><a class="product-image" href="#product-13"><img src="../public/images/products/acer_laptop.png" alt="HP laptop in silver"><span class="favorite" aria-label="Add to wishlist">♡</span></a><div class="product-info"><small>HP</small><h3><a href="#product-13">Pavilion 15.6-inch laptop, silver</a></h3><div class="rating"><span>★★★★☆</span> <small>(118)</small></div><strong>$679.99</strong></div></article>
+          <article class="product-card"><a class="product-image" href="#product-14"><img src="../public/images/products/rolex_laptop.png" alt="ASUS VivoBook notebook"><span class="favorite" aria-label="Add to wishlist">♡</span></a><div class="product-info"><small>ASUS</small><h3><a href="#product-14">VivoBook 15-inch laptop, 256GB SSD</a></h3><div class="rating"><span>★★★★★</span> <small>(67)</small></div><strong>$499.99</strong></div></article>
+          <article class="product-card"><a class="product-image" href="#product-15"><img src="../public/images/products/nitro_laptop.png" alt="Acer Nitro 5 gaming laptop"><span class="favorite" aria-label="Add to wishlist">♡</span></a><div class="product-info"><small>ACER</small><h3><a href="#product-15">Nitro 5 gaming laptop with RTX graphics</a></h3><div class="rating"><span>★★★★★</span> <small>(202)</small></div><strong>$1,049.99</strong></div></article>
+          <article class="product-card"><a class="product-image" href="#product-16"><img src="../public/images/products/sony_laptop.png" alt="Samsung Galaxy Book"><span class="favorite" aria-label="Add to wishlist">♡</span></a><div class="product-info"><small>SAMSUNG</small><h3><a href="#product-16">Galaxy Book 360 convertible laptop</a></h3><div class="rating"><span>★★★★☆</span> <small>(82)</small></div><strong>$1,299.99</strong></div></article>
+          <article class="product-card"><a class="product-image" href="#product-17"><img src="../public/images/products/acer_silver.png" alt="Lenovo IdeaPad laptop"><span class="favorite" aria-label="Add to wishlist">♡</span></a><div class="product-info"><small>LENOVO</small><h3><a href="#product-17">IdeaPad Slim 3 15.6-inch laptop</a></h3><div class="rating"><span>★★★★☆</span> <small>(91)</small></div><strong>$529.99</strong></div></article>
+          <article class="product-card"><a class="product-image" href="#product-18"><img src="../public/images/products/asus_laptop.png" alt="ASUS TUF laptop"><span class="favorite" aria-label="Add to wishlist">♡</span></a><div class="product-info"><small>ASUS</small><h3><a href="#product-18">TUF Dash gaming laptop, 144Hz display</a></h3><div class="rating"><span>★★★★★</span> <small>(107)</small></div><strong>$1,199.99</strong></div></article>
+          <article class="product-card"><a class="product-image" href="#product-19"><img src="../public/images/products/macbook_16.png" alt="Apple MacBook Air notebook"><span class="favorite" aria-label="Add to wishlist">♡</span></a><div class="product-info"><small>APPLE</small><h3><a href="#product-19">MacBook Air 15-inch, 256GB storage</a></h3><div class="rating"><span>★★★★★</span> <small>(276)</small></div><strong>$1,299.00</strong></div></article>
+          <article class="product-card"><a class="product-image" href="#product-20"><img src="../public/images/products/sony_notebook.png" alt="Surface Laptop touchscreen"><span class="favorite" aria-label="Add to wishlist">♡</span></a><div class="product-info"><small>MICROSOFT</small><h3><a href="#product-20">Surface Laptop touchscreen, 16GB RAM</a></h3><div class="rating"><span>★★★★☆</span> <small>(58)</small></div><strong>$1,399.99</strong></div></article>
+        </div>
+        <nav class="pagination" aria-label="Product pages"><a href="#laptop-list" aria-label="Previous page">‹</a><a href="#laptop-list">1</a><a class="current" href="#laptop-list" aria-current="page">2</a><a href="#laptop-list">3</a><a href="#laptop-list">4</a><span>…</span><a href="#laptop-list">12</a><a href="#laptop-list" aria-label="Next page">›</a></nav>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer_frame" id="contact"><div class="continer"><div class="footer_top">
+    <div class="footer_contact_box"><span class="footer_contact_title">Contact Us</span><div class="footer_contact_main"><img src="../public/images/icons/phone-call.svg" alt=""><div><strong>Monday-Friday: 08am-9pm</strong><span>+(1) 123 456 7890</span></div></div><div class="footer_contact_main"><img src="../public/images/icons/email.svg" alt=""><div><strong>Need help with your order?</strong><span>support@zenmart.com</span></div></div></div>
+    <div class="footer_support_box"><span class="footer_contact_title">Customer Support</span><a href="#contact">Contact Us</a><a href="#help">Help Centre</a><a href="#returns">Returns &amp; Exchanges</a><a href="#financing">Best Buy Financing</a><a href="#gift-card">Best Buy Gift Card</a></div>
+    <div class="footer_support_box"><span class="footer_contact_title">Services</span><a href="#geek-squad">Geek Squad</a><a href="#advisor">In-Home Advisor</a><a href="#trade-in">Trade-In Program</a><a href="#recycling">Electronics Recycling</a><a href="#health">Best Buy Health</a></div>
+    <div class="footer_media_box"><div class="footer_media_main"><span class="footer_contact_title">Follow Us</span><div class="social-links"><a href="#facebook" aria-label="Facebook">f</a><a href="#twitter" aria-label="Twitter">𝕏</a><a href="#instagram" aria-label="Instagram">◎</a><a href="#linkedin" aria-label="LinkedIn">in</a></div></div><div class="footer_media_main apps"><span class="footer_contact_title">Mobile Apps</span><a href="#ios"><img src="../public/images/icons/apple_icon.png" alt=""> iOS App</a><a href="#android"><img src="../public/images/icons/android_icon.png" alt=""> Android App</a></div></div>
+    <div class="footer_media_box footer-payment"><div class="footer_media_main"><span class="footer_contact_title">We accept</span><div class="card_box"><img src="../public/images/icons/visa.png" alt="Visa"><img src="../public/images/icons/master_card.png" alt="Mastercard"><img src="../public/images/icons/apple_pay.png" alt="Apple Pay"><img src="../public/images/icons/dicvover.png" alt="Discover"><img src="../public/images/icons/paypal.png" alt="PayPal"><img src="../public/images/icons/amex.png" alt="American Express"></div></div></div>
+  </div><div class="footer_bottom"><div class="footer_main"><div class="footer_bottom_left"><span>© 2022 Zenmart. All Rights Reserved</span><span>Privacy · Terms · Sitemap</span></div><div class="footer_bottom_right"><label class="footer_select_box"><span>Currency</span><select aria-label="Currency"><option>USD</option></select></label><label class="footer_select_box"><span>Language</span><select aria-label="Language"><option>English</option></select></label></div></div></div></div></footer>
+</body>
+</html>
